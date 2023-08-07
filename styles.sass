@@ -1,0 +1,65 @@
+/********* IMPORTING ************/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,800&display=swap');
+
+/**** VARIABLE DEFINITION *****/
+$color-background: #2e075d;
+$primary-color: #421f81;
+$secondary-color: #b784fc;
+$tertiary-color: #97db29;
+
+/*********** TYPOGRAPHY ***************/
+$font-family-rubik: 'Rubik', sans-serif;
+$font-family-rubik-italic: 'Rubik', sans-serif; // stilo italic
+
+$font-size-small: 14px;
+$font-color-small: #ffffff;
+
+$font-size-medium: 18px;
+$font-color-medium: #fff2f2;
+
+$font-size-large: 24px;
+$font-color-large: #ffffff;
+
+/********* TYPOGRAPHY SIZES *************/
+.small {
+  font-family: $font-family-rubik;
+  font-size: $font-size-small;
+  color: $font-color-small;
+}
+
+.medium {
+  font-family: $font-family-rubik;
+  font-size: $font-size-medium;
+  color: $font-color-medium;
+}
+
+.large {
+  font-family: $font-family-rubik-italic;
+  font-size: $font-size-large;
+  color: $font-color-large;
+}
+
+body {
+  font-family: $font-family-rubik;
+}
+
+header {
+  background-color: $primary-color;
+}
+
+.container-md {
+  max-width: 100%; // Establece el ancho máximo deseado para el contenedor 
+  padding: 85px;    // Agrega un relleno interno opcional
+}
+
+.navbar-nav .nav-item {
+  margin: 0 30px; // Agrega margen horizontal a los enlaces para separarlos
+}
+
+.nav-item.nav-link {
+  text-decoration: none; // Esto quitará el subrayado de los enlaces en la barra de navegación
+}
+
+footer {
+  background-color: $secondary-color;
+}
