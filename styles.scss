@@ -44,7 +44,7 @@ body {
 }
 
 header {
-  background-color: $primary-color;
+  background-color: $color-background;
 }
 
 .container-md {
@@ -60,6 +60,33 @@ header {
   text-decoration: none; // Esto quitará el subrayado de los enlaces en la barra de navegación
 }
 
+///////////////////////////////////////////////////////////////////////
+
+
+.background-section {
+  background-image: url('sleep-naturally.jpeg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; /* Ajusta el relleno según sea necesario */
+}
+
+.overlay-container {
+  background-color: rgba(66, 31, 129, 0.5); /* Cambia los valores RGB y el valor alfa según desees */
+  color: #fff; /* Color del texto en el contenido superpuesto */
+  padding: 60px;
+  margin-top: 779px;
+  opacity: 1;
+  transition: opacity 2s ease-in-out; 
+  
+  &.fade-in {
+    opacity: 1; 
+  }
+}
+
+
+
+
 footer {
   background-color: $secondary-color;
 }
+
