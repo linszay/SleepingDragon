@@ -115,5 +115,22 @@ footer {
   background-color: $secondary-color;
 }
 
+
+/* Product Styling =================================================================*/
+
+.carousel {
+  background-color: $secondary-color;
 }
 
+.carousel-caption > p {
+  color: black;
+}
+
+.carousel-item > img {
+  border-radius: 4px;
+}
+
+.carousel-caption-width {
+  width: 70%;
+  text-align: left;
+}
