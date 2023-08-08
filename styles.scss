@@ -1,5 +1,7 @@
 /********* IMPORTING ************/
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,800&display=swap');
+
 
 /**** VARIABLE DEFINITION *****/
 $color-background: #2e075d;
@@ -9,7 +11,7 @@ $tertiary-color: #97db29;
 
 /*********** TYPOGRAPHY ***************/
 $font-family-rubik: 'Rubik', sans-serif;
-$font-family-rubik-italic: 'Rubik', sans-serif; // stilo italic
+//$font-family-rubik-italic: 'Rubik', sans-serif; // italic
 
 $font-size-small: 14px;
 $font-color-small: #ffffff;
@@ -34,7 +36,7 @@ $font-color-large: #ffffff;
 }
 
 .large {
-  font-family: $font-family-rubik-italic;
+  font-family: $font-family-rubik;
   font-size: $font-size-large;
   color: $font-color-large;
 }
@@ -45,6 +47,7 @@ body {
 
 header {
   background-color: $color-background;
+  font-family: $font-family-rubik;
 }
 
 .container-md {
@@ -83,10 +86,34 @@ header {
   }
 }
 
+//////////////////////////////////////////////////////////////////////////
+
+.ribbon-section {
+
+  margin-top: 50px; /* Ejemplo: margen superior de la sección */
+
+.row {
+  display: flex; /* Mostrar las columnas en una fila flexible */
+  flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+  justify-content: center; /* Centrar las columnas horizontalmente */
+  align-items: center;
+  }
+
+  .ribbon-image {
+    height: 51px; /* Ejemplo: altura de cada columna con imagen */
+    background-size: cover;
+    background-position: center;
+    border: 154px solid #885dcf; /* Ejemplo: borde para cada columna */
+    /* Agrega más estilos según sea necesario */
+  }
+}
+
 
 
 
 footer {
   background-color: $secondary-color;
+}
+
 }
 
