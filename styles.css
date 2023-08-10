@@ -104,4 +104,60 @@ footer {
   width: 70%;
   text-align: left; }
 
+/* Contact styling =================================================================*/
+.contact {
+  background-color: #2e075d; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin-top: -21%;
+  margin-bottom: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 60%;
+  padding: 5%;
+  border-radius: 5%; }
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 0;
+  padding: 0 0 2rem; }
+
+label {
+  cursor: pointer;
+  display: block;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  padding: 1rem; }
+
+input[type="text"], input[type="email"], textarea {
+  position: relative;
+  width: 100%;
+  padding: 1.2rem;
+  line-height: 1;
+  border-top: .1rem solid black;
+  border-bottom: .1rem solid black;
+  background-color: white;
+  box-shadow: none;
+  outline: 0; }
+
+input[type="text"], input[type="email"] {
+  padding-right: 3rem; }
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border: .1rem solid gray;
+  background-color: lightgrey; }
+
+::placeholder {
+  font-style: italic; }
+
+.button {
+  margin-top: 15px;
+  padding: 5px; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -9,8 +9,8 @@
     
     <title>About</title>
 </head>
-<body>
-    <div class="page-container">
+<body class="contact">
+    <div class="contact page-container">
     <div class="content-wrap">
     <header class="container-md"> 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -34,7 +34,51 @@
       </header>
       <main>
         <section>
-
+            <div class="container-md">
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend class="visually-hidden">Your personal information</legend>
+                        <div class="form-group col-1-2">
+                            <label for="your-first-name">First Name</label>
+                            <div class="form-field">
+                                <span class="form-field-container">
+                                    <input type="text" name="your-first-name" id="your-first-name" placeholder="e.g. Mike" pattern="[A-Za-zÀ-ž\s]{3,}" maxlength="35" autocomplete="on" accesskey="f" required>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group col-1-2">
+                            <label for="your-last-name">Last Name</label>
+                            <div class="form-field">
+                                <span class="form-field-container">
+                                    <input type="text" name="your-last-name" id="your-last-name" placeholder="e.g. Smith" pattern="[A-Za-zÀ-ž\s]{3,}" maxlength="40" autocomplete="on" accesskey="l" required>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group col-2-">
+                            <label for="your-email">Email</label>
+                            <div class="form-field">
+                                <span class="form-field-container">
+                                    <input type="email" name="your-email" id="your-email" placeholder="e.g. youremail@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="55" autocomplete="on" accesskey="e" required>
+                                </span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="visually-hidden">Your comment</legend>
+                        <div class="form-group col-2-3">
+                            <label for="your-title">Comment</label>
+                            <div class="form-field">
+                                <span class="form-field-container">
+                                    <input type="text" name="your-comment" id="your-comment" placeholder="Your comment" pattern="[A-Za-zÀ-ž\s]{4,}" maxlength="75" autocomplete="on" accesskey="t" required>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="button button-primary">Post my comment</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </section>
       </main>
       <footer class="bg-secondary text-white text-center py-3">
