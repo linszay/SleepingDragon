@@ -1,6 +1,6 @@
 /********* IMPORTING ************/
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap');
 
 
 /**** VARIABLE DEFINITION *****/
@@ -10,8 +10,7 @@ $secondary-color: #b784fc;
 $tertiary-color: #97db29;
 
 /*********** TYPOGRAPHY ***************/
-$font-family-rubik: 'Rubik', sans-serif;
-//$font-family-rubik-italic: 'Rubik', sans-serif; // italic
+$font-family: 'Outfit', sans-serif;
 
 $font-size-small: 14px;
 $font-color-small: #ffffff;
@@ -24,53 +23,73 @@ $font-color-large: #ffffff;
 
 /********* TYPOGRAPHY SIZES *************/
 .small {
-  font-family: $font-family-rubik;
+  font-family: $font-family;
   font-size: $font-size-small;
   color: $font-color-small;
 }
 
 .medium {
-  font-family: $font-family-rubik;
+  font-family: $font-family;
   font-size: $font-size-medium;
   color: $font-color-medium;
 }
 
 .large {
-  font-family: $font-family-rubik;
+  font-family: $font-family;
   font-size: $font-size-large;
   color: $font-color-large;
 }
 
 body {
-  font-family: $font-family-rubik;
+  font-family: $font-family;
 }
 
 header {
   background-color: $color-background;
-  font-family: $font-family-rubik;
+  font-family: $font-family;
 }
 
-.container-md {
-  max-width: 100%; // Establece el ancho máximo deseado para el contenedor 
-  padding: 85px;    // Agrega un relleno interno opcional
+
+.container-fluid{
+  max-width: 100%;
+  background-color: $color-background;
+}
+
+
+.nav-link-custom {
+  color:$font-color-large;
 }
 
 .navbar-nav .nav-item {
-  margin: 0 30px; // Agrega margen horizontal a los enlaces para separarlos
+  margin: 0 70px; // Agrega margen horizontal a los enlaces para separarlos
 }
 
 .nav-item.nav-link {
-  text-decoration: none; // Esto quitará el subrayado de los enlaces en la barra de navegación
+  text-decoration: none;
 }
 
-///////////////////////////////////////////////////////////////////////
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
 
+.navbar-logo img {
+  margin: 0 auto; /* Centrar horizontalmente */
+}
 
-.background-section {
-  background-image: url('sleep-naturally.jpeg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen de fondo */
+@media (min-width: 1400px){}
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1616px;
+}
+
+/*************** container que disapear *****************/
+
+.background-image {
+  background-image: url('images/sleep-naturally.jpeg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen de fondo */
   background-size: cover;
-  background-position: center;
-  padding: 100px 0; /* Ajusta el relleno según sea necesario */
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
 }
 
 .overlay-container {
@@ -78,138 +97,93 @@ header {
   color: #fff; /* Color del texto en el contenido superpuesto */
   padding: 60px;
   margin-top: 779px;
-  opacity: 1;
-  transition: opacity 2s ease-in-out; 
-  
-  &.fade-in {
-    opacity: 1; 
-  }
+  animation: fadeIn 1s;
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 //////////////////////////////////////////////////////////////////////////
 
 .ribbon-section {
+  margin-top: 50px;
+  
 
-  margin-top: 50px; /* Ejemplo: margen superior de la sección */
+  .row {
+    display: flex; /* Mostrar las columnas en una fila flexible */
+    flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+    justify-content: center; /* Centrar las columnas horizontalmente */
+    align-items: stretch;
+    
 
-.row {
-  display: flex; /* Mostrar las columnas en una fila flexible */
-  flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
-  justify-content: center; /* Centrar las columnas horizontalmente */
-  align-items: center;
-  }
+    .ribbon-image {
+      flex: 1; /* Cambio: permite que las columnas ocupen el espacio disponible */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid #885dcf;
+      margin: 10px;
+      max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
 
-  .ribbon-image {
-    height: 51px; /* Ejemplo: altura de cada columna con imagen */
-    background-size: cover;
-    background-position: center;
-    border: 154px solid #885dcf; /* Ejemplo: borde para cada columna */
-    /* Agrega más estilos según sea necesario */
+
+        img{
+        max-width: 300px;
+        max-height: 300px;
+        object-fit: contain;
+      }
+    }
   }
 }
 
+/*********************Footer*************************/
+/*********Palabras en el top del footer******************/
 
+.custom-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 88px; /* Espacio entre elementos */
+}
+
+.custom-footer-links a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.custom-footer-links a:hover {
+  color: #ffcc00; /* Cambia a tu color deseado en hover */
+}
+
+/*********Social Icons******************/
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px; /* Espacio entre íconos */
+  margin-top: 31px;
+}
+
+.social-icon {
+  max-width: 40px; /* Ajusta el valor según tu preferencia */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 5px;
+  width: 30px;
+}
+
+.custom-footer {
+  text-align: center;
+  color: white;
+  font-family:$font-family; 
+}
 
 
 footer {
   background-color: $secondary-color;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4rem; 
 }
 
-
-/* Product Styling =================================================================*/
-
-.page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-.content-wrap {
-  padding-bottom: 4rem;
-}
-
-.carousel {
-  background-color: $secondary-color;
-}
-
-.carousel-caption > p {
-  color: black;
-}
-
-.carousel-item > img {
-  border-radius: 4px;
-}
-
-.carousel-caption-width {
-  width: 70%;
-  text-align: left;
-}
-
-
-/* Contact styling =================================================================*/
-.contact {
-  background-color: #2e075d;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
-  margin-top: -21%;
-  margin-bottom: 7%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  width: 60%;
-  padding: 5%;
-  border-radius: 5%;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border: 0;
-  padding: 0 0 2rem;
-}
-
-label {
-  cursor: pointer;
-  display: block;
-  white-space: nowrap;
-  font-size: 1.4rem;
-  padding: 1rem;
-}
-
-input[type="text"], input[type="email"], textarea {
-  position: relative;
-  width: 100%;
-  padding: 1.2rem;
-  line-height: 1;
-  border-top: .1rem solid black;
-  border-bottom: .1rem solid black;
-  background-color: white;
-  box-shadow: none;
-  outline: 0;
-}
-
-input[type="text"], input[type="email"] {
-  padding-right: 3rem;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-  border: .1rem solid gray;
-  background-color: lightgrey;
-}
-
-::placeholder {
-  font-style: italic;
-}
-
-.button {
-  margin-top: 15px;
-  padding: 5px;
-}
