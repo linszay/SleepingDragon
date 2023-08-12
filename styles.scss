@@ -58,14 +58,21 @@ header {
 
 .nav-link-custom {
   color:$font-color-large;
+  font-size: $font-size-large;
+  margin: 20px;
+  transition: color 0.5s;
 }
 
 .navbar-nav .nav-item {
-  margin: 0 70px; // Agrega margen horizontal a los enlaces para separarlos
+  margin: 0 100px; 
 }
 
 .nav-item.nav-link {
   text-decoration: none;
+}
+
+.nav-link-custom:hover {
+  color: $tertiary-color; 
 }
 
 .navbar-logo {
@@ -74,22 +81,24 @@ header {
 }
 
 .navbar-logo img {
-  margin: 0 auto; /* Centrar horizontalmente */
+  margin: 0 auto; 
 }
 
 @media (min-width: 1400px){}
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1616px;
-}
+
+  }
 
 /*************** container que disapear *****************/
 
 .background-image {
-  background-image: url('images/sleep-naturally.jpeg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen de fondo */
+  background-image: url('images/white-noise.jpg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen de fondo */
   background-size: cover;
   background-position: bottom center;
   padding-top: 50%;
   position: relative;
+  max-width: 100%;
 }
 
 .overlay-container {
@@ -97,7 +106,7 @@ header {
   color: #fff; /* Color del texto en el contenido superpuesto */
   padding: 60px;
   margin-top: 779px;
-  animation: fadeIn 1s;
+  animation: fadeIn 5s;
 }
 
 @keyframes fadeIn {
@@ -130,8 +139,8 @@ header {
 
 
         img{
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 266px;
+        max-height: 266px;
         object-fit: contain;
       }
     }
@@ -186,3 +195,29 @@ header {
 footer {
   background-color: $secondary-color;
 }
+
+
+
+/***************Cookies*********************/
+.cookie-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.cookie-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
