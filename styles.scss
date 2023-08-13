@@ -135,6 +135,16 @@ header {
 .background-image-about {
   background-image: url('images/group.avif');
 }
+/**************** background Contact********************/
+
+.background-image-contact {
+  background-image: url('images/Best.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
+  max-width: 100%;
+}
 
 .overlay-container {
   background-color: rgba(66, 31, 129, 0.5); 
@@ -144,7 +154,7 @@ header {
   animation: fadeIn 5s;
 }
 
-//////////////////////////////////////////////////////////////////////////
+/************************************************************************/
 
 .ribbon-section {
   margin-top: 50px;
@@ -175,6 +185,45 @@ header {
     }
   }
 }
+
+
+/*************** Contact Section *****************/
+.contact-section {
+  background-color: $primary-color; /* Cambiar el color de fondo */
+  color: $font-color-small; /* Cambiar el color del texto */
+
+  .contact-description {
+    border-right: 2px solid $secondary-color; /* Agregar un borde lateral de color */
+    padding-right: 20px; /* Agregar espacio en el lado derecho */
+  }
+
+  .contact-form {
+    background-color: rgba(151, 219, 41, 0.5); /* Cambiar el color de fondo del formulario */
+    padding: 54px; /* Añadir espacio interno */
+    border-radius: 22px; /* Agregar bordes redondeados */
+    margin-bottom: 100px;
+  }
+
+  .form-label {
+    color: $font-color-medium; /* Cambiar el color de las etiquetas del formulario */
+  }
+
+  .form-control {
+    background-color: $color-background; /* Cambiar el color de fondo de los campos de entrada */
+    color: $font-color-small; /* Cambiar el color del texto en los campos de entrada */
+    border-color: $secondary-color; /* Cambiar el color del borde de los campos de entrada */
+  }
+
+  .btn-primary {
+    background-color: $secondary-color; /* Cambiar el color de fondo del botón */
+    border-color: $secondary-color; /* Cambiar el color del borde del botón */
+    &:hover {
+      background-color: darken($secondary-color, 10%); /* Oscurecer el color del botón al pasar el cursor */
+      border-color: darken($secondary-color, 10%); /* Oscurecer el color del borde del botón al pasar el cursor */
+    }
+  }
+}
+
 
 /*********************Footer*************************/
 /*********Palabras en el top del footer******************/
@@ -208,8 +257,8 @@ header {
 }
 
 .social-icon {
-  max-width: 40px; /* Ajusta el valor según tu preferencia */
-  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 40px;
+  height: auto;
   margin: 5px;
   width: 30px;
 }
@@ -224,6 +273,7 @@ header {
 footer {
   background-color: $secondary-color;
 }
+
 
 
 
