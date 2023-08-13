@@ -122,11 +122,6 @@ header {
 
 /*************** container que disapear *****************/
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 .background-image {
   background-image: url('images/white-noise.jpg');
   background-size: cover;
@@ -139,10 +134,6 @@ header {
 /*************** background About***********************/
 .background-image-about {
   background-image: url('images/group.avif');
-  background-size: cover;
-  background-position: bottom center;
-  padding-top: 50%;
-  max-width: 100%;
 }
 
 .overlay-container {
@@ -152,7 +143,6 @@ header {
   margin-top: 779px;
   animation: fadeIn 5s;
 }
-
 
 //////////////////////////////////////////////////////////////////////////
 

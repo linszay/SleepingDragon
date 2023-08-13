@@ -16,24 +16,3 @@ window.addEventListener("load", () => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const currentPage = window.location.pathname;
-
-  if (currentPage.includes("about.html")) {
-    const header = document.querySelector(".navbar");
-
-    let prevScrollPos = window.pageYOffset;
-
-    window.addEventListener("scroll", () => {
-      const currentScrollPos = window.pageYOffset;
-
-      if (prevScrollPos > currentScrollPos) {
-        header.classList.remove("hidden"); // Muestra el encabezado
-      } else {
-        header.classList.add("hidden"); // Oculta el encabezado
-      }
-
-      prevScrollPos = currentScrollPos;
-    });
-  }
-});
