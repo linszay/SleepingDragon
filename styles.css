@@ -68,8 +68,6 @@ header {
     /* Centrar las columnas horizontalmente */
     align-items: center; }
   .ribbon-section .ribbon-image {
-    height: 51px;
-    /* Ejemplo: altura de cada columna con imagen */
     background-size: cover;
     background-position: center;
     border: 154px solid #885dcf;
@@ -103,6 +101,31 @@ footer {
 .carousel-caption-width {
   width: 70%;
   text-align: left; }
+
+.product .container {
+  background-color: white !important;
+  display: flex;
+  position: relative; }
+
+.ribbon-section {
+  margin-top: 50px; }
+  .ribbon-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; }
+    .ribbon-section .row .ribbon-image {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid #885dcf;
+      margin: 10px;
+      max-width: 307px; }
+      .ribbon-section .row .ribbon-image img {
+        max-width: 300px;
+        max-height: 300px;
+        object-fit: contain; }
 
 /* Contact styling =================================================================*/
 .contact {
