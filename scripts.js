@@ -1,14 +1,16 @@
-// Script para manejar cookies de consentimiento
-const cookieContainer = document.querySelector(".cookie-container");
+console.log("Script loaded");
 const cookieButton = document.querySelector(".cookie-btn");
+const cookiePopup = document.querySelector(".cookie-popup");
 
 cookieButton.addEventListener("click", () => {
-  cookieContainer.classList.remove("active");
+  cookiePopup.style.display = "none";
   localStorage.setItem("cookieConsent", "true");
 });
 
-setTimeout(() => {
-  if (!localStorage.getItem("cookieConsent")) {
-    cookieContainer.classList.add("active");
-  }
-}, 2000);
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    if (!localStorage.getItem("cookieConsent")) {
+      cookiePopup.style.display = "block";
+    }
+  }, 2000);
+});

@@ -47,6 +47,7 @@ body {
 
 header {
   background-color: $color-background;
+<<<<<<< HEAD
   font-family: $font-family-rubik;
 }
 
@@ -57,12 +58,64 @@ header {
 
 .navbar-nav .nav-item {
   margin: 0 30px; // Agrega margen horizontal a los enlaces para separarlos
+=======
+  font-family: $font-family;
+  position: sticky;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+  opacity: 1; 
+}
+/******Efect on the header*******/
+
+
+.header.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/********************************/
+
+.container-fluid{
+  max-width: 100%;
+  background-color: $color-background;
+}
+
+
+.nav-link-custom {
+  color:$font-color-large;
+  font-size: $font-size-large;
+  margin: 20px;
+  transition: color 0.5s;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 100px; 
+>>>>>>> Manuel
 }
 
 .nav-item.nav-link {
   text-decoration: none; // Esto quitará el subrayado de los enlaces en la barra de navegación
 }
 
+<<<<<<< HEAD
 ///////////////////////////////////////////////////////////////////////
 
 
@@ -71,13 +124,59 @@ header {
   background-size: cover;
   background-position: center;
   padding: 100px 0; /* Ajusta el relleno según sea necesario */
+=======
+.nav-link-custom:hover {
+  color: $tertiary-color; 
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  margin: 0 auto; 
+}
+
+@media (min-width: 1400px){}
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1616px;
+
+  }
+
+/*************** container que disapear *****************/
+
+.background-image {
+  background-image: url('images/white-noise.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
+  max-width: 100%;
+}
+
+/*************** background About***********************/
+.background-image-about {
+  background-image: url('images/group.avif');
+}
+/**************** background Contact********************/
+
+.background-image-contact {
+  background-image: url('images/Best.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
+  max-width: 100%;
+>>>>>>> Manuel
 }
 
 .overlay-container {
-  background-color: rgba(66, 31, 129, 0.5); /* Cambia los valores RGB y el valor alfa según desees */
-  color: #fff; /* Color del texto en el contenido superpuesto */
+  background-color: rgba(66, 31, 129, 0.5); 
+  color: #ffffff;
   padding: 60px;
   margin-top: 779px;
+<<<<<<< HEAD
   opacity: 1;
   transition: opacity 2s ease-in-out; 
   
@@ -87,6 +186,12 @@ header {
 }
 
 //////////////////////////////////////////////////////////////////////////
+=======
+  animation: fadeIn 5s;
+}
+
+/************************************************************************/
+>>>>>>> Manuel
 
 .ribbon-section {
 
@@ -175,14 +280,58 @@ footer {
 
 
         img{
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 266px;
+        max-height: 266px;
         object-fit: contain;
       }
     }
   }
 }
 
+<<<<<<< HEAD
+=======
+
+/*************** Contact Section *****************/
+.contact-section {
+  background-color: $primary-color; /* Cambiar el color de fondo */
+  color: $font-color-small; /* Cambiar el color del texto */
+
+  .contact-description {
+    border-right: 2px solid $secondary-color; /* Agregar un borde lateral de color */
+    padding-right: 20px; /* Agregar espacio en el lado derecho */
+  }
+
+  .contact-form {
+    background-color: rgba(151, 219, 41, 0.5); /* Cambiar el color de fondo del formulario */
+    padding: 54px; /* Añadir espacio interno */
+    border-radius: 22px; /* Agregar bordes redondeados */
+    margin-bottom: 100px;
+  }
+
+  .form-label {
+    color: $font-color-medium; /* Cambiar el color de las etiquetas del formulario */
+  }
+
+  .form-control {
+    background-color: $color-background; /* Cambiar el color de fondo de los campos de entrada */
+    color: $font-color-small; /* Cambiar el color del texto en los campos de entrada */
+    border-color: $secondary-color; /* Cambiar el color del borde de los campos de entrada */
+  }
+
+  .btn-primary {
+    background-color: $secondary-color; /* Cambiar el color de fondo del botón */
+    border-color: $secondary-color; /* Cambiar el color del borde del botón */
+    &:hover {
+      background-color: darken($secondary-color, 10%); /* Oscurecer el color del botón al pasar el cursor */
+      border-color: darken($secondary-color, 10%); /* Oscurecer el color del borde del botón al pasar el cursor */
+    }
+  }
+}
+
+
+/*********************Footer*************************/
+/*********Palabras en el top del footer******************/
+>>>>>>> Manuel
 
 /* Contact styling =================================================================*/
 .contact {
@@ -211,12 +360,20 @@ fieldset {
   padding: 0 0 2rem;
 }
 
+<<<<<<< HEAD
 label {
   cursor: pointer;
   display: block;
   white-space: nowrap;
   font-size: 1.4rem;
   padding: 1rem;
+=======
+.social-icon {
+  max-width: 40px;
+  height: auto;
+  margin: 5px;
+  width: 30px;
+>>>>>>> Manuel
 }
 
 input[type="text"], input[type="email"], textarea {
@@ -235,6 +392,7 @@ input[type="text"], input[type="email"] {
   padding-right: 3rem;
 }
 
+<<<<<<< HEAD
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   border: .1rem solid gray;
   background-color: lightgrey;
@@ -248,3 +406,31 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   margin-top: 15px;
   padding: 5px;
 }
+=======
+
+
+
+/***************Cookies*********************/
+.cookie-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.cookie-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+>>>>>>> Manuel

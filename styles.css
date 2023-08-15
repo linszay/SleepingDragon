@@ -1,63 +1,137 @@
 @charset "UTF-8";
 /********* IMPORTING ************/
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap");
 /**** VARIABLE DEFINITION *****/
 /*********** TYPOGRAPHY ***************/
 /********* TYPOGRAPHY SIZES *************/
 .small {
-  font-family: "Rubik", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 14px;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .medium {
-  font-family: "Rubik", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 18px;
-  color: #fff2f2; }
+  color: #fff2f2;
+}
 
 .large {
-  font-family: "Rubik", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 24px;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 body {
-  font-family: "Rubik", sans-serif; }
+  font-family: "Outfit", sans-serif;
+}
 
 header {
   background-color: #2e075d;
-  font-family: "Rubik", sans-serif; }
+  font-family: "Outfit", sans-serif;
+  position: sticky;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+  opacity: 1;
+}
 
-.container-md {
+/******Efect on the header*******/
+.header.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/********************************/
+.container-fluid {
   max-width: 100%;
-  padding: 85px; }
+  background-color: #2e075d;
+}
+
+.nav-link-custom {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 20px;
+  transition: color 0.5s;
+}
 
 .navbar-nav .nav-item {
-  margin: 0 30px; }
+  margin: 0 100px;
+}
 
 .nav-item.nav-link {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-.background-section {
-  background-image: url("sleep-naturally.jpeg");
-  /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen de fondo */
+.nav-link-custom:hover {
+  color: #97db29;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  margin: 0 auto;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 1616px;
+}
+
+/*************** container que disapear *****************/
+.background-image {
+  background-image: url("images/white-noise.jpg");
   background-size: cover;
-  background-position: center;
-  padding: 100px 0;
-  /* Ajusta el relleno según sea necesario */ }
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
+  max-width: 100%;
+}
+
+/*************** background About***********************/
+.background-image-about {
+  background-image: url("images/group.avif");
+}
+
+/**************** background Contact********************/
+.background-image-contact {
+  background-image: url("images/Best.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
+  max-width: 100%;
+}
 
 .overlay-container {
   background-color: rgba(66, 31, 129, 0.5);
-  /* Cambia los valores RGB y el valor alfa según desees */
-  color: #fff;
-  /* Color del texto en el contenido superpuesto */
+  color: #ffffff;
   padding: 60px;
   margin-top: 779px;
-  opacity: 1;
-  transition: opacity 2s ease-in-out; }
-  .overlay-container.fade-in {
-    opacity: 1; }
+  animation: fadeIn 5s;
+}
 
+/************************************************************************/
 .ribbon-section {
   margin-top: 50px;
+<<<<<<< HEAD
   /* Ejemplo: margen superior de la sección */ }
   .ribbon-section .row {
     display: flex;
@@ -73,10 +147,123 @@ header {
     border: 154px solid #885dcf;
     /* Ejemplo: borde para cada columna */
     /* Agrega más estilos según sea necesario */ }
+=======
+}
+.ribbon-section .row {
+  display: flex; /* Mostrar las columnas en una fila flexible */
+  flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+  justify-content: center; /* Centrar las columnas horizontalmente */
+  align-items: stretch;
+}
+.ribbon-section .row .ribbon-image {
+  flex: 1; /* Cambio: permite que las columnas ocupen el espacio disponible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #885dcf;
+  margin: 10px;
+  max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
+}
+.ribbon-section .row .ribbon-image img {
+  max-width: 266px;
+  max-height: 266px;
+  object-fit: contain;
+}
+
+/*************** Contact Section *****************/
+.contact-section {
+  background-color: #421f81; /* Cambiar el color de fondo */
+  color: #ffffff; /* Cambiar el color del texto */
+}
+.contact-section .contact-description {
+  border-right: 2px solid #b784fc; /* Agregar un borde lateral de color */
+  padding-right: 20px; /* Agregar espacio en el lado derecho */
+}
+.contact-section .contact-form {
+  background-color: rgba(151, 219, 41, 0.5); /* Cambiar el color de fondo del formulario */
+  padding: 54px; /* Añadir espacio interno */
+  border-radius: 22px; /* Agregar bordes redondeados */
+  margin-bottom: 100px;
+}
+.contact-section .form-label {
+  color: #fff2f2; /* Cambiar el color de las etiquetas del formulario */
+}
+.contact-section .form-control {
+  background-color: #2e075d; /* Cambiar el color de fondo de los campos de entrada */
+  color: #ffffff; /* Cambiar el color del texto en los campos de entrada */
+  border-color: #b784fc; /* Cambiar el color del borde de los campos de entrada */
+}
+.contact-section .btn-primary {
+  background-color: #b784fc; /* Cambiar el color de fondo del botón */
+  border-color: #b784fc; /* Cambiar el color del borde del botón */
+}
+.contact-section .btn-primary:hover {
+  background-color: #9a52fb; /* Oscurecer el color del botón al pasar el cursor */
+  border-color: #9a52fb; /* Oscurecer el color del borde del botón al pasar el cursor */
+}
+
+/*********************Footer*************************/
+/*********Palabras en el top del footer******************/
+.custom-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 88px; /* Espacio entre elementos */
+}
+
+.custom-footer-links a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.custom-footer-links a:hover {
+  color: #ffcc00; /* Cambia a tu color deseado en hover */
+}
+
+/*********Social Icons******************/
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px; /* Espacio entre íconos */
+  margin-top: 31px;
+}
+
+.social-icon {
+  max-width: 40px;
+  height: auto;
+  margin: 5px;
+  width: 30px;
+}
+
+.custom-footer {
+  text-align: center;
+  color: white;
+  font-family: "Outfit", sans-serif;
+}
+>>>>>>> Manuel
 
 footer {
   background-color: #b784fc;
+}
+
+/***************Cookies*********************/
+.cookie-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.cookie-content {
   position: absolute;
+<<<<<<< HEAD
   bottom: 0;
   width: 100%;
   height: 4rem; }
@@ -182,5 +369,15 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 .button {
   margin-top: 15px;
   padding: 5px; }
+=======
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+>>>>>>> Manuel
 
 /*# sourceMappingURL=styles.css.map */
