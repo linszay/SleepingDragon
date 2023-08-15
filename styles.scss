@@ -1,6 +1,6 @@
 /********* IMPORTING ************/
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap');
 
 
 /**** VARIABLE DEFINITION *****/
@@ -10,8 +10,7 @@ $secondary-color: #b784fc;
 $tertiary-color: #97db29;
 
 /*********** TYPOGRAPHY ***************/
-$font-family-rubik: 'Rubik', sans-serif;
-//$font-family-rubik-italic: 'Rubik', sans-serif; // italic
+$font-family: 'Outfit', sans-serif;
 
 $font-size-small: 14px;
 $font-color-small: #ffffff;
@@ -24,41 +23,29 @@ $font-color-large: #ffffff;
 
 /********* TYPOGRAPHY SIZES *************/
 .small {
-  font-family: $font-family-rubik;
+  font-family: $font-family;
   font-size: $font-size-small;
   color: $font-color-small;
 }
 
 .medium {
-  font-family: $font-family-rubik;
+  font-family: $font-family;
   font-size: $font-size-medium;
   color: $font-color-medium;
 }
 
 .large {
-  font-family: $font-family-rubik;
+  font-family: $font-family;
   font-size: $font-size-large;
   color: $font-color-large;
 }
 
 body {
-  font-family: $font-family-rubik;
+  font-family: $font-family;
 }
 
 header {
   background-color: $color-background;
-<<<<<<< HEAD
-  font-family: $font-family-rubik;
-}
-
-.container-md {
-  max-width: 100%; // Establece el ancho máximo deseado para el contenedor 
-  padding: 85px;    // Agrega un relleno interno opcional
-}
-
-.navbar-nav .nav-item {
-  margin: 0 30px; // Agrega margen horizontal a los enlaces para separarlos
-=======
   font-family: $font-family;
   position: sticky;
   top: 0;
@@ -108,23 +95,12 @@ header {
 
 .navbar-nav .nav-item {
   margin: 0 100px; 
->>>>>>> Manuel
 }
 
 .nav-item.nav-link {
-  text-decoration: none; // Esto quitará el subrayado de los enlaces en la barra de navegación
+  text-decoration: none;
 }
 
-<<<<<<< HEAD
-///////////////////////////////////////////////////////////////////////
-
-
-.background-section {
-  background-image: url('sleep-naturally.jpeg'); /* Cambia 'ruta-de-tu-imagen.jpg' por la ruta de tu imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0; /* Ajusta el relleno según sea necesario */
-=======
 .nav-link-custom:hover {
   color: $tertiary-color; 
 }
@@ -168,7 +144,6 @@ header {
   padding-top: 50%;
   position: relative;
   max-width: 100%;
->>>>>>> Manuel
 }
 
 .overlay-container {
@@ -176,107 +151,30 @@ header {
   color: #ffffff;
   padding: 60px;
   margin-top: 779px;
-<<<<<<< HEAD
-  opacity: 1;
-  transition: opacity 2s ease-in-out; 
-  
-  &.fade-in {
-    opacity: 1; 
-  }
-}
-
-//////////////////////////////////////////////////////////////////////////
-=======
   animation: fadeIn 5s;
 }
 
 /************************************************************************/
->>>>>>> Manuel
-
-.ribbon-section {
-
-  margin-top: 50px; /* Ejemplo: margen superior de la sección */
-
-.row {
-  display: flex; /* Mostrar las columnas en una fila flexible */
-  flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
-  justify-content: center; /* Centrar las columnas horizontalmente */
-  align-items: center;
-  }
-
-  .ribbon-image {
-    background-size: cover;
-    background-position: center;
-    border: 154px solid #885dcf; /* Ejemplo: borde para cada columna */
-    /* Agrega más estilos según sea necesario */
-  }
-}
-
-
-
-
-footer {
-  background-color: $secondary-color;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4rem; 
-}
-
-
-/* Product Styling =================================================================*/
-
-.page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-.content-wrap {
-  padding-bottom: 4rem;
-}
-
-.carousel {
-  background-color: $secondary-color;
-}
-
-.carousel-caption > p {
-  color: black;
-}
-
-.carousel-item > img {
-  border-radius: 4px;
-}
-
-.carousel-caption-width {
-  width: 70%;
-  text-align: left;
-}
-
-.product .container {
-  background-color: white !important;
-  display: flex;
-  position: relative;
-
-}
 
 .ribbon-section {
   margin-top: 50px;
-
+  
 
   .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex; /* Mostrar las columnas en una fila flexible */
+    flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
+    justify-content: center; /* Centrar las columnas horizontalmente */
     align-items: stretch;
+    
 
     .ribbon-image {
-      flex: 1;
+      flex: 1; /* Cambio: permite que las columnas ocupen el espacio disponible */
       display: flex;
       align-items: center;
       justify-content: center;
       border: 3px solid #885dcf;
       margin: 10px;
-      max-width: 307px;
+      max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
 
 
         img{
@@ -288,8 +186,6 @@ footer {
   }
 }
 
-<<<<<<< HEAD
-=======
 
 /*************** Contact Section *****************/
 .contact-section {
@@ -331,82 +227,53 @@ footer {
 
 /*********************Footer*************************/
 /*********Palabras en el top del footer******************/
->>>>>>> Manuel
 
-/* Contact styling =================================================================*/
-.contact {
-  background-color: #2e075d;
-}
-
-form {
+.custom-footer-links {
   display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
-  margin-top: -21%;
-  margin-bottom: 7%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  width: 60%;
-  padding: 5%;
-  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  gap: 88px; /* Espacio entre elementos */
 }
 
-fieldset {
+.custom-footer-links a {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.custom-footer-links a:hover {
+  color: #ffcc00; /* Cambia a tu color deseado en hover */
+}
+
+/*********Social Icons******************/
+
+.social-icons {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border: 0;
-  padding: 0 0 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 35px; /* Espacio entre íconos */
+  margin-top: 31px;
 }
 
-<<<<<<< HEAD
-label {
-  cursor: pointer;
-  display: block;
-  white-space: nowrap;
-  font-size: 1.4rem;
-  padding: 1rem;
-=======
 .social-icon {
   max-width: 40px;
   height: auto;
   margin: 5px;
   width: 30px;
->>>>>>> Manuel
 }
 
-input[type="text"], input[type="email"], textarea {
-  position: relative;
-  width: 100%;
-  padding: 1.2rem;
-  line-height: 1;
-  border-top: .1rem solid black;
-  border-bottom: .1rem solid black;
-  background-color: white;
-  box-shadow: none;
-  outline: 0;
+.custom-footer {
+  text-align: center;
+  color: white;
+  font-family:$font-family; 
 }
 
-input[type="text"], input[type="email"] {
-  padding-right: 3rem;
+
+footer {
+  background-color: $secondary-color;
 }
 
-<<<<<<< HEAD
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-  border: .1rem solid gray;
-  background-color: lightgrey;
-}
-
-::placeholder {
-  font-style: italic;
-}
-
-.button {
-  margin-top: 15px;
-  padding: 5px;
-}
-=======
 
 
 
@@ -432,5 +299,3 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
->>>>>>> Manuel
