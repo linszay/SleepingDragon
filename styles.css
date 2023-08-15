@@ -236,6 +236,14 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
 
 /*--------------Product Styling --------------------*/
+.background-image-product {
+  background-image: url("images/productback.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
+  max-width: 100%; }
+
 .product-carousel {
   padding: 5%;
   margin: 0%;
