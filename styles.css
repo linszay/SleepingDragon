@@ -236,5 +236,16 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
 
 /*--------------Product Styling --------------------*/
+.product-carousel {
+  padding: 5%;
+  margin: 0%;
+  background-color: #bda2e0; }
+
+.carousel-item > img {
+  border-radius: 6%; }
+
+.carousel-control-next .carousel-control-prev {
+  margin-right: 90px;
+  margin-left: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

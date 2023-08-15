@@ -301,4 +301,17 @@ footer {
 }
 
 /*--------------Product Styling --------------------*/
+.product-carousel {
+  padding: 5%;
+  margin: 0%;
+  background-color: #bda2e0;
+}
 
+.carousel-item > img {
+  border-radius: 6%;
+}
+
+.carousel-control-next .carousel-control-prev {
+  margin-right: 90px;
+  margin-left: 10px;
+}
