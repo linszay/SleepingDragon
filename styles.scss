@@ -2,6 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap');
 
+/**** Animations *****/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /**** VARIABLE DEFINITION *****/
 $color-background: #2e075d;
@@ -66,18 +78,6 @@ header {
   transform: translateY(0);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 1;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
 /********************************/
 
 .container-fluid{
@@ -140,6 +140,12 @@ header {
 .background-image-about {
   background-image: url('images/group.avif');
 }
+
+.background-image-about {
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
 /**************** background Contact********************/
 
 .background-image-contact {
@@ -164,6 +170,7 @@ header {
 
 .ribbon-section {
   margin-top: 50px;
+
 
   
 

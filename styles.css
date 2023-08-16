@@ -1,6 +1,17 @@
 @charset "UTF-8";
 /********* IMPORTING ************/
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap");
+/**** Animations *****/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /**** VARIABLE DEFINITION *****/
 /*********** TYPOGRAPHY ***************/
 /********* TYPOGRAPHY SIZES *************/
@@ -47,16 +58,6 @@ header {
   transform: translateY(0);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 1;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 /********************************/
 .container-fluid {
   max-width: 100%;
@@ -258,6 +259,10 @@ footer {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.background-image-about {
+  margin-top: -50px; /* Ajusta este valor según sea necesario */
 }
 
 /*# sourceMappingURL=styles.css.map */
