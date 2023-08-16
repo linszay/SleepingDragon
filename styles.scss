@@ -140,10 +140,7 @@ header {
 /*************** background About***********************/
 .background-image-about {
   background-image: url('images/group.avif');
-}
-
-
-.background-image-about {
+  position: relative;
   margin-top: -50px;
   margin-bottom: -50px;
 }
