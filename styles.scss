@@ -54,6 +54,7 @@ $font-color-large: #ffffff;
 
 body {
   font-family: $font-family;
+  background-color: $color-background;
 }
 
 header {
@@ -141,11 +142,15 @@ header {
   background-image: url('images/group.avif');
 }
 
+
 .background-image-about {
   margin-top: -50px;
   margin-bottom: -50px;
 }
 
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+}
 /**************** background Contact********************/
 
 .background-image-contact {

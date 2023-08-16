@@ -35,6 +35,7 @@
 
 body {
   font-family: "Outfit", sans-serif;
+  background-color: #2e075d;
 }
 
 header {
@@ -114,6 +115,15 @@ header {
 /*************** background About***********************/
 .background-image-about {
   background-image: url("images/group.avif");
+}
+
+.background-image-about {
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
 }
 
 /**************** background Contact********************/
@@ -259,10 +269,6 @@ footer {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.background-image-about {
-  margin-top: -50px; /* Ajusta este valor según sea necesario */
 }
 
 /*# sourceMappingURL=styles.css.map */
