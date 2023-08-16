@@ -49,7 +49,7 @@ header {
 
 @keyframes fadeInUp {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(50px);
   }
   to {
@@ -91,7 +91,12 @@ header {
   margin: 0 auto;
 }
 
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   max-width: 1616px;
 }
 
@@ -126,6 +131,7 @@ header {
   padding: 60px;
   margin-top: 779px;
   animation: fadeIn 5s;
+  max-width: 1675px;
 }
 
 /************************************************************************/
