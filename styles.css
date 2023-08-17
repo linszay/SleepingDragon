@@ -18,20 +18,17 @@
 .small {
   font-family: "Outfit", sans-serif;
   font-size: 14px;
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 .medium {
   font-family: "Outfit", sans-serif;
   font-size: 18px;
-  color: #fff2f2;
-}
+  color: #fff2f2; }
 
 .large {
   font-family: "Outfit", sans-serif;
   font-size: 24px;
-  color: #ffffff;
-}
+  color: #ffffff; }
 
 body {
   font-family: "Outfit", sans-serif;
@@ -51,47 +48,38 @@ header {
 .header.hidden {
   opacity: 0;
   transform: translateY(-100%);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
+  transition: opacity 0.3s ease, transform 0.3s ease; }
 
 .header.visible {
   opacity: 1;
-  transform: translateY(0);
-}
+  transform: translateY(0); }
 
 /********************************/
 .container-fluid {
   max-width: 100%;
-  background-color: #2e075d;
-}
+  background-color: #2e075d; }
 
 .nav-link-custom {
   color: #ffffff;
   font-size: 24px;
   margin: 20px;
-  transition: color 0.5s;
-}
+  transition: color 0.5s; }
 
 .navbar-nav .nav-item {
-  margin: 0 100px;
-}
+  margin: 0 100px; }
 
 .nav-item.nav-link {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .nav-link-custom:hover {
-  color: #97db29;
-}
+  color: #97db29; }
 
 .navbar-logo {
   display: flex;
-  align-items: center;
-}
+  align-items: center; }
 
 .navbar-logo img {
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .container,
 .container-lg,
@@ -109,13 +97,11 @@ header {
   background-position: bottom center;
   padding-top: 50%;
   position: relative;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /*************** background About***********************/
 .background-image-about {
-  background-image: url("images/group.avif");
-  position: relative;
+  background-image: url("images/group.avif");   position: relative;
   margin-top: -50px;
   margin-bottom: -50px;
 }
@@ -170,35 +156,43 @@ header {
 
 /*************** Contact Section *****************/
 .contact-section {
-  background-color: #421f81; /* Cambiar el color de fondo */
-  color: #ffffff; /* Cambiar el color del texto */
-}
-.contact-section .contact-description {
-  border-right: 2px solid #b784fc; /* Agregar un borde lateral de color */
-  padding-right: 20px; /* Agregar espacio en el lado derecho */
-}
-.contact-section .contact-form {
-  background-color: rgba(151, 219, 41, 0.5); /* Cambiar el color de fondo del formulario */
-  padding: 54px; /* Añadir espacio interno */
-  border-radius: 22px; /* Agregar bordes redondeados */
-  margin-bottom: 100px;
-}
-.contact-section .form-label {
-  color: #fff2f2; /* Cambiar el color de las etiquetas del formulario */
-}
-.contact-section .form-control {
-  background-color: #2e075d; /* Cambiar el color de fondo de los campos de entrada */
-  color: #ffffff; /* Cambiar el color del texto en los campos de entrada */
-  border-color: #b784fc; /* Cambiar el color del borde de los campos de entrada */
-}
-.contact-section .btn-primary {
-  background-color: #b784fc; /* Cambiar el color de fondo del botón */
-  border-color: #b784fc; /* Cambiar el color del borde del botón */
-}
-.contact-section .btn-primary:hover {
-  background-color: #9a52fb; /* Oscurecer el color del botón al pasar el cursor */
-  border-color: #9a52fb; /* Oscurecer el color del borde del botón al pasar el cursor */
-}
+  background-color: #421f81;
+  /* Cambiar el color de fondo */
+  color: #ffffff;
+  /* Cambiar el color del texto */ }
+  .contact-section .contact-description {
+    border-right: 2px solid #b784fc;
+    /* Agregar un borde lateral de color */
+    padding-right: 20px;
+    /* Agregar espacio en el lado derecho */ }
+  .contact-section .contact-form {
+    background-color: rgba(151, 219, 41, 0.5);
+    /* Cambiar el color de fondo del formulario */
+    padding: 54px;
+    /* Añadir espacio interno */
+    border-radius: 22px;
+    /* Agregar bordes redondeados */
+    margin-bottom: 100px; }
+  .contact-section .form-label {
+    color: #fff2f2;
+    /* Cambiar el color de las etiquetas del formulario */ }
+  .contact-section .form-control {
+    background-color: #2e075d;
+    /* Cambiar el color de fondo de los campos de entrada */
+    color: #ffffff;
+    /* Cambiar el color del texto en los campos de entrada */
+    border-color: #b784fc;
+    /* Cambiar el color del borde de los campos de entrada */ }
+  .contact-section .btn-primary {
+    background-color: #b784fc;
+    /* Cambiar el color de fondo del botón */
+    border-color: #b784fc;
+    /* Cambiar el color del borde del botón */ }
+    .contact-section .btn-primary:hover {
+      background-color: #9a52fb;
+      /* Oscurecer el color del botón al pasar el cursor */
+      border-color: #9a52fb;
+      /* Oscurecer el color del borde del botón al pasar el cursor */ }
 
 /*********************Footer*************************/
 /*********Palabras en el top del footer******************/
@@ -206,45 +200,41 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 88px; /* Espacio entre elementos */
-}
+  gap: 88px;
+  /* Espacio entre elementos */ }
 
 .custom-footer-links a {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 16px;
   text-decoration: none;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
 .custom-footer-links a:hover {
-  color: #ffcc00; /* Cambia a tu color deseado en hover */
-}
+  color: #ffcc00;
+  /* Cambia a tu color deseado en hover */ }
 
 /*********Social Icons******************/
 .social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 35px; /* Espacio entre íconos */
-  margin-top: 31px;
-}
+  gap: 35px;
+  /* Espacio entre íconos */
+  margin-top: 31px; }
 
 .social-icon {
   max-width: 40px;
   height: auto;
   margin: 5px;
-  width: 30px;
-}
+  width: 30px; }
 
 .custom-footer {
   text-align: center;
   color: white;
-  font-family: "Outfit", sans-serif;
-}
+  font-family: "Outfit", sans-serif; }
 
 footer {
-  background-color: #b784fc;
-}
+  background-color: #b784fc; }
 
 /***************Cookies*********************/
 .cookie-popup {
@@ -266,7 +256,50 @@ footer {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+/*--------------Product Styling --------------------*/
+.background-image-product {
+  background-image: url("images/productback.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
+  max-width: 100%; }
+
+.product-carousel {
+  padding: 5%;
+  margin: 0%;
+  background-color: #bda2e0; }
+
+.carousel-item > img {
+  border-radius: 6%; }
+
+.carousel-control-next .carousel-control-prev {
+  margin-right: 90px;
+  margin-left: 10px; }
+
+/*--------------Product Styling --------------------*/
+.background-image-product {
+  background-image: url("images/productback.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  padding-top: 50%;
+  position: relative;
+  max-width: 100%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.product-carousel {
+  padding: 5%;
+  margin: 0%;
+  background-color: #bda2e0;
+}
+
+.carousel-item > img {
+  border-radius: 6%;
+}
+
+.carousel-control-next .carousel-control-prev {
+  margin-right: 90px;
+  margin-left: 10px;
+}

@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <title>Product</title>
 </head>
 <body>
@@ -33,39 +34,74 @@
         </div>
       </header>
       <main>
-        <section class="product-info container-md">
-          <h1></h1>
-          <span>At our core, we're driven by a relentless commitment to excellence, innovation, and your ultimate satisfaction. When you choose our products, you're not just selecting a brand; you're embracing a philosophy that puts you at the center of everything we do.</span>
+        <section class="product-info container-md background-seccion background-image-product">
+          <h1>Why choose our products?</h1>
+          <span class="bg-">At our core, we're driven by a relentless commitment to excellence, innovation, and your ultimate satisfaction. When you choose our products, you're not just selecting a brand; you're embracing a philosophy that puts you at the center of everything we do.</span>
           <span>We take pride in crafting products of the highest quality, meticulously designed and rigorously tested to meet and exceed your expectations. Our dedication to quality ensures that each product you receive is a testament to our unwavering standards.</span>
           <span>When you choose us, you're choosing transparency. We believe in open communication about our products, their ingredients, and their benefits. Your trust is invaluable, and we aim to uphold it through honesty and integrity.</span>
         </section>
-        <section>
+        <section class="ribbon-section">
           <h1 class="text-center">Products</h1>
-            <div id="carouselExampleSlidesOnly" class="carousel slide container-md" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div><h2 class="text-center align-top">Strawberry gummies</h2></div>
-                    <img src="/images/gummies.jpeg" class="d-block w-30" alt="...">
-                    <div class="carousel-caption carousel-caption-width">
-                    </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-6 ribbon-image">
+                <img src="images/sleeppill.jpeg" alt="ImagenSquare">
+              </div>
+              <div class="col-md-3 col-6 ribbon-image">
+                <img src="images/sleeppill.jpeg" alt="ImagenSquare">
+              </div>
+              <div class="col-md-3 col-6 ribbon-image">
+                <img src="images/sleeppill.jpeg" alt="ImagenSquare">
+              </div>
+              <div class="col-md-3 col-6 ribbon-image">
+                <img src="images/sleeppill.jpeg" alt="ImagenSquare">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-carousel">
+          <div id="carouselExampleControls" class="carousel slide container-md" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="text-center mb-4">Strawberry Gummies</h2>
+                    <p class="text-center">Unlock the magic of a peaceful night's rest with our All-Natural Strawberry Sleep Gummies. Crafted with care and expertise, these delightful gummies are designed to gently guide you into a deep and restorative sleep, allowing you to wake up refreshed and rejuvenated.</p>
                   </div>
-                  <div class="carousel-item">
-                    <div><h2 class="text-center align-top">Assorted fruit gummies</h2></div>
-                    <img src="/images/fruitgummies.jpeg" class="d-block w-30" alt="...">
-                    <div class="carousel-caption">
-                        <p>Assorted fruit gummies</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div><h2 class="text-center align-top">Children's Sleep Aid Gummies</h2></div>
-                    <img src="/images/cutegummies.jpeg" class="d-block w-30" alt="...">
-                    <div class="carousel-caption">
-                        <p>Children's sleep aid gummies</p>
-                    </div>
-                  </div>
+                  <img src="/images/gummies.jpeg" class="d-block w-25 ml-4" alt="Strawberry Gummies">
                 </div>
               </div>
-        </section>
+
+              <div class="carousel-item">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="text-center mb-4">Assorted Fruit Gummies</h2>
+                    <p class="text-center">Unlock the magic of a peaceful night's rest with our All-Natural Assorted Fruit Sleep Gummies. Crafted with care and expertise, these delightful gummies are designed to gently guide you into a deep and restorative sleep, allowing you to wake up refreshed and rejuvenated.</p>
+                  </div>
+                  <img src="/images/fruitgummies.jpeg" class="d-block w-25 ml-4" alt="Assorted Fruit Gummies">
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="d-flex align-items-center">
+                  <div>
+                    <h2 class="text-center mb-4">Children's Sleep Gummies</h2>
+                    <p class="text-center">Unlock the magic of a peaceful night's rest with our All-Natural Children's Sleep Gummies. Crafted with care and expertise, these delightful gummies are designed to gently guide you into a deep and restorative sleep, allowing you to wake up refreshed and rejuvenated.</p>
+                  </div>
+                  <img src="/images/cutegummies.jpeg" class="d-block w-25 ml-4" alt="Children's Sleep Gummies">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </section>        
       </main>
       <footer class="bg-secondary text-white text-center py-3">
         <p>&copy; 2023 Sleep Aid. Todos los derechos reservados.</p>
