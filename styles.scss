@@ -2,6 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap');
 
+/**** Animations *****/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /**** VARIABLE DEFINITION *****/
 $color-background: #2e075d;
@@ -42,6 +54,7 @@ $font-color-large: #ffffff;
 
 body {
   font-family: $font-family;
+  background-color: $color-background;
 }
 
 header {
@@ -66,23 +79,12 @@ header {
   transform: translateY(0);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
 /********************************/
 
 .container-fluid{
   max-width: 100%;
   background-color: $color-background;
+
 }
 
 
@@ -108,14 +110,17 @@ header {
 .navbar-logo {
   display: flex;
   align-items: center;
-}
-
-.navbar-logo img {
   margin: 0 auto; 
+  margin-bottom: -45px;
 }
 
 @media (min-width: 1400px){}
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+.container, 
+.container-lg, 
+.container-md, 
+.container-sm, 
+.container-xl, 
+.container-xxl {
     max-width: 1616px;
 
   }
@@ -126,14 +131,25 @@ header {
   background-image: url('images/white-noise.jpg');
   background-size: cover;
   background-position: bottom center;
-  padding-top: 50%;
   position: relative;
   max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .background-image {
+    max-width: 100%; /* Ajusta el valor para dispositivos más pequeños */
+  }
 }
 
 /*************** background About***********************/
 .background-image-about {
   background-image: url('images/group.avif');
+  position: relative;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
 }
 /**************** background Contact********************/
 
@@ -152,19 +168,20 @@ header {
   padding: 60px;
   margin-top: 779px;
   animation: fadeIn 5s;
+  max-width: 1675px;
 }
 
 /************************************************************************/
 
 .ribbon-section {
   margin-top: 50px;
-  
 
   .row {
     display: flex; /* Mostrar las columnas en una fila flexible */
     flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
     justify-content: center; /* Centrar las columnas horizontalmente */
     align-items: stretch;
+    margin-bottom: 47px;
     
 
     .ribbon-image {
