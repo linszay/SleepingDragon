@@ -157,7 +157,7 @@ header {
   background-image: url('images/Best.jpg');
   background-size: cover;
   background-position: bottom center;
-  padding-top: 50%;
+  padding-top: 10%;
   position: relative;
   max-width: 100%;
 }
@@ -171,6 +171,14 @@ header {
   max-width: 1675px;
 }
 
+.row-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px); /* Ajusta el valor para controlar la altura vertical */
+}
+
+
 /************************************************************************/
 
 .ribbon-section {
@@ -181,7 +189,7 @@ header {
     flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
     justify-content: center; /* Centrar las columnas horizontalmente */
     align-items: stretch;
-    margin-bottom: 47px;
+    margin-bottom: 47px ;
     
 
     .ribbon-image {
