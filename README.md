@@ -83,7 +83,7 @@ Sleep Aid Dragon is a website designed to introduce and promote the benefits of 
 The website features captivating background images that enhance the visual appeal. These background sections create a compelling atmosphere and draw visitors' attention to the content.
 
 ### Product Styling
-(images/.png)
+![Sleep Aid Logo](images/Screenshot1.png)
 
 The product styling section showcases the Sleep Aid Dragon product with a beautifully designed carousel. Users can view images of the product from different angles, contributing to a comprehensive product presentation.
 
