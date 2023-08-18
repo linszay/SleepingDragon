@@ -210,6 +210,29 @@ header {
   border-color: #9a52fb; /* Oscurecer el color del borde del botón al pasar el cursor */
 }
 
+/*********************Contact Page*************************/
+form {
+  padding: 60px 68px;
+  box-shadow: 0 0 20px #8ec5f5;
+  border-radius: 60px;
+  text-align: center;
+  width: 340px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  color: #fff;
+}
+
 /*********************Footer*************************/
 /*********Palabras en el top del footer******************/
 .custom-footer-links {

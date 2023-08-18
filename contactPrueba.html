@@ -40,38 +40,37 @@
     </header>
   
   <!-- Contenido de la página Contact -->
-  <section class="background-seccion background-image-contact">
-    <div class="container">
-      <div class="row row-contact">
-        <div class="col-md-6">
-          <div class="contact-description">
-            <h2 class="medium">¡Contáctanos para saber más sobre nuestro producto!</h2>
-            <p class="small">¿Tienes preguntas sobre cómo Sleeping Dragon puede mejorar tu sueño y bienestar? ¡Estamos aquí para ayudarte! Completa el formulario de contacto a continuación y uno de nuestros expertos en sueño se pondrá en contacto contigo en breve.</p>
-          </div>
+
+    <div class="container mt-5 text-center">
+      <form>
+        <h2>Contacto</h2>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Nombre">
         </div>
-        <div class="col-md-6">
-          <div class="contact-form">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-            </form>
-          </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Teléfono">
         </div>
-      </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Mensaje"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="privacy-policy">
+          <label class="form-check-label" for="privacy-policy">Política de Privacidad</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terms-conditions">
+          <label class="form-check-label" for="terms-conditions">Términos y Condiciones</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </div>
-  </section>
-  
 
   <!-- Footer -->
   <footer class="footer py-4">
