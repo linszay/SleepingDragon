@@ -157,7 +157,7 @@ header {
   background-image: url('images/Best.jpg');
   background-size: cover;
   background-position: bottom center;
-  padding-top: 50%;
+  padding-top: 10%;
   position: relative;
   max-width: 100%;
 }
@@ -171,6 +171,14 @@ header {
   max-width: 1675px;
 }
 
+.row-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px); /* Ajusta el valor para controlar la altura vertical */
+}
+
+
 /************************************************************************/
 
 .ribbon-section {
@@ -181,7 +189,7 @@ header {
     flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
     justify-content: center; /* Centrar las columnas horizontalmente */
     align-items: stretch;
-    margin-bottom: 47px;
+    margin-bottom: 47px ;
     
 
     .ribbon-image {
@@ -239,6 +247,32 @@ header {
       border-color: darken($secondary-color, 10%); /* Oscurecer el color del borde del botón al pasar el cursor */
     }
   }
+}
+
+/*********************Contact Page*************************/
+
+
+form {
+  padding: 60px 68px;
+  box-shadow: 0 0 20px rgba($color: hsl(269, 96%, 39%), $alpha: 1.0);
+  border-radius: 60px;
+  text-align: center;
+  width: 340px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.input{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+ color: #fff;
 }
 
 

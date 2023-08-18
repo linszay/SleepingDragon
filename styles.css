@@ -131,7 +131,7 @@ header {
   background-image: url("images/Best.jpg");
   background-size: cover;
   background-position: bottom center;
-  padding-top: 50%;
+  padding-top: 10%;
   position: relative;
   max-width: 100%;
 }
@@ -143,6 +143,13 @@ header {
   margin-top: 779px;
   animation: fadeIn 5s;
   max-width: 1675px;
+}
+
+.row-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px); /* Ajusta el valor para controlar la altura vertical */
 }
 
 /************************************************************************/
@@ -201,6 +208,29 @@ header {
 .contact-section .btn-primary:hover {
   background-color: #9a52fb; /* Oscurecer el color del botón al pasar el cursor */
   border-color: #9a52fb; /* Oscurecer el color del borde del botón al pasar el cursor */
+}
+
+/*********************Contact Page*************************/
+form {
+  padding: 60px 68px;
+  box-shadow: 0 0 20px #6004c3;
+  border-radius: 60px;
+  text-align: center;
+  width: 340px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  color: #fff;
 }
 
 /*********************Footer*************************/
