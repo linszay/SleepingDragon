@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="ruta_de_la_imagen.png" alt="Descripción de la imagen">
+  <img src="images/footerlogo.png" alt="Main Logo">
 </p>
 
 <div align="center">
