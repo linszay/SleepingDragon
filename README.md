@@ -1,11 +1,10 @@
 <p align="center">
-  <img src="images/footerlogo.png" alt="Main Logo">
+  <img src="images/footerlogho.png" alt="Main Logo">
 </p>
 
 <div align="center">
     <h1>
-        🐲 
-        <a href="https://www.triumphmayflowerclub.com/">Sleeping Dragon Project</a>
+        <a>Sleeping Dragon Project</a>
     </h1>
     <h4><b>Welcome to Sleep Aid - Sleep Assistance Solution</b></h4>
     <h4>
@@ -13,7 +12,7 @@
         •
         <a href="#How to Used">How to Use</a>
         •
-        <a href="Technologies Used">Technologies Used</a>
+        <a href="#Technologies Used">Technologies Used</a>
         •
         <a href="#Table of contents">Table of contents</a>
         •
@@ -47,11 +46,9 @@
 </div>
 
 <div align="center">
-  <img src="./images/gif.gif" alt="Alt Text" width="600">
+  <img src="./images/video.gif" alt="Alt Text" width="600">
 </div>
-
-
-
+<br>
 Welcome to Sleep Aid - Sleep Assistance Solution, a natural product designed to enhance your sleep quality and help you effectively fall asleep. This README will provide you with an overview of the features and code structure, along with instructions on how to build and run the project.
 
 ##  Key Features 🗝️
@@ -91,12 +88,12 @@ git clone <REPOSITORY_URL>
 - [Description](#description)
 - [Header and Navigation](#header-and-navigation)
 - [Benefits Section](#benefits-section)
-- [Ribbon Section](#Ribbon_Section)
-- [Images Section](#images-section)
+- [Ribbon Section](#ribbon-section)
 - [Footer](#footer)
 - [Cookies](#cookies)
-- [CSS Code](#css-code)
+- [Styling Definitions for Webpage Design](#styling-definitions-for-webpage-design)
 - [JavaScript Code](#javascript-code)
+- [Copyright](#copyright)
 
 ## Description
 
@@ -145,7 +142,7 @@ The navigation bar in this HTML and Bootstrap code provides an easy-to-use navig
 
 The benefits section is designed as a container with a background image. It presents key benefits of the Sleep Aid Dragon product. The content highlights the clinically proven formula, non-habit forming nature, mood and focus enhancement, and the holistic approach to sleep wellness. The benefits are listed in an unordered list for clarity.
 
-### Ribbon_Section
+### Ribbon Section
 A section with a row of images is provided, each displayed within a ribbon. This section might be intended to showcase related images or content.
 ```html
 <section class="ribbon-section">
@@ -168,7 +165,7 @@ A section with a row of images is provided, each displayed within a ribbon. This
   </section>
 ```
 
-### footer
+### Footer
 The footer contains footer links corresponding to the navigation links. Social media icons are included for various platforms. The footer also displays a copyright notice.
 ```html
 <footer class="footer py-4">
@@ -193,7 +190,7 @@ The footer contains footer links corresponding to the navigation links. Social m
           </div>
       </div>
 ```
-### cookies
+### Cookies
 A cookie popup is included at the bottom, informing users about the use of cookies on the site and providing an "Accept" button.
 ```js
 console.log("Script loaded");
@@ -214,7 +211,29 @@ window.addEventListener("load", () => {
 });
 ```
 
-### javascript-code
+### Styling Definitions for Webpage Design
+
+This code block defines the visual appearance of a webpage using CSS. It imports a Google Font for typography and sets up keyframes for animations. It also establishes variables for colors, typography sizes, and font families, providing a consistent visual theme throughout the site. The code encompasses header styling, navigation bar design, container properties, background images, responsive behavior, and customized footer and cookie pop-up components. This CSS code greatly influences the site's aesthetic and interaction, making it visually appealing and enhancing user experience.
+
+```css
+.contact-section {
+  background-color: $primary-color; /* Cambiar el color de fondo */
+  color: $font-color-small; /* Cambiar el color del texto */
+
+  .contact-description {
+    border-right: 2px solid $secondary-color; /* Agregar un borde lateral de color */
+    padding-right: 20px; /* Agregar espacio en el lado derecho */
+  }
+
+  .contact-form {
+    background-color: rgba(151, 219, 41, 0.5); /* Cambiar el color de fondo del formulario */
+    padding: 54px; /* Añadir espacio interno */
+    border-radius: 22px; /* Agregar bordes redondeados */
+    margin-bottom: 100px;
+  }
+```
+
+### Javascript-code
 The code references an external JavaScript file named "scripts.js."
 
 
@@ -222,9 +241,11 @@ The code references an external JavaScript file named "scripts.js."
 
 © 2023 Sleep Aid Dragon. All rights reserved.
 
-**Author:** Manuel Zambrano
-**Email:** mnl.azs@gmail.com
+## Author :pencil2:
+ **Manuel Zambrano**:rage4: <br>
+ **Lindsey Lancaster** :supervillain_woman:
 
 ---
+ _**Sleep Aid - Sleep Assistance Solution** is designed to enhance sleep quality and ensure restful sleep. We hope you find this information helpful and that it provides you with a better understanding of the project!_
 
-**Sleep Aid - Sleep Assistance Solution** is designed to enhance sleep quality and ensure restful sleep. We hope you find this information helpful and that it provides you with a better understanding of the project!
+
