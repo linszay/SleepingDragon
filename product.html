@@ -4,109 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="cart.js" async></script>
     <title>Product</title>
 </head>
 <body>
   <div class="page-container">
     <div class="content-wrap">
-      <header class="product container-md"> 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Sleeping Dragon</a>
+      <header> 
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+              <a class="navbar-brand navbar-logo" href="#">
+                  <img src="images/sleppingdragon.png" alt="Logo" width="400" class="d-inline-block align-text-top">
+              </a>
+              <a class="navbar-brand" href="#">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="about.html">About</a>
-                  <a class="nav-link" href="product.html">Product</a>
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                  <a class="nav-link disabled" aria-disabled="true"></a>
+                  <a class="nav-link-custom nav-link" aria-current="page" href="index.html">CAVE</a>
+                  <a class="nav-link-custom nav-link" href="about.html">ABOUT THE DRAGON</a>
+                  <a class="nav-link-custom nav-link" href="product.html">SHOP</a>
+                  <a class="nav-link-custom nav-link" href="contact.html">CONTACT</a>
+                  <a class="nav-link-custom nav-link disabled" aria-disabled="true"></a>
                 </div>
               </div>
-            </div>
-          </nav>
-        </div>
-      </header>
+          </div>
+      </nav>
+    </header>
       <main>
-        <section class="product-info container-md background-seccion background-image-product">
-          <h1>Why choose our products?</h1>
-          <span class="bg-">At our core, we're driven by a relentless commitment to excellence, innovation, and your ultimate satisfaction. When you choose our products, you're not just selecting a brand; you're embracing a philosophy that puts you at the center of everything we do.</span>
-          <span>We take pride in crafting products of the highest quality, meticulously designed and rigorously tested to meet and exceed your expectations. Our dedication to quality ensures that each product you receive is a testament to our unwavering standards.</span>
-          <span>When you choose us, you're choosing transparency. We believe in open communication about our products, their ingredients, and their benefits. Your trust is invaluable, and we aim to uphold it through honesty and integrity.</span>
-        </section>
-        <section class="ribbon-section">
-          <h1 class="text-center">Products</h1>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-6 ribbon-image">
-                <img src="images/sleeppill.jpeg" alt="ImagenSquare">
-              </div>
-              <div class="col-md-3 col-6 ribbon-image">
-                <img src="images/sleeppill.jpeg" alt="ImagenSquare">
-              </div>
-              <div class="col-md-3 col-6 ribbon-image">
-                <img src="images/sleeppill.jpeg" alt="ImagenSquare">
-              </div>
-              <div class="col-md-3 col-6 ribbon-image">
-                <img src="images/sleeppill.jpeg" alt="ImagenSquare">
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="product-carousel">
-          <div id="carouselExampleControls" class="carousel slide container-md" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="d-flex align-items-center">
-                  <div>
-                    <h2 class="text-center mb-4">Strawberry Gummies</h2>
-                    <p class="text-center">Unlock the magic of a peaceful night's rest with our All-Natural Strawberry Sleep Gummies. Crafted with care and expertise, these delightful gummies are designed to gently guide you into a deep and restorative sleep, allowing you to wake up refreshed and rejuvenated.</p>
-                  </div>
-                  <img src="/images/gummies.jpeg" class="d-block w-25 ml-4" alt="Strawberry Gummies">
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="d-flex align-items-center">
-                  <div>
-                    <h2 class="text-center mb-4">Assorted Fruit Gummies</h2>
-                    <p class="text-center">Unlock the magic of a peaceful night's rest with our All-Natural Assorted Fruit Sleep Gummies. Crafted with care and expertise, these delightful gummies are designed to gently guide you into a deep and restorative sleep, allowing you to wake up refreshed and rejuvenated.</p>
-                  </div>
-                  <img src="/images/fruitgummies.jpeg" class="d-block w-25 ml-4" alt="Assorted Fruit Gummies">
-                </div>
-              </div>
-              
-              <div class="carousel-item">
-                <div class="d-flex align-items-center">
-                  <div>
-                    <h2 class="text-center mb-4">Children's Sleep Gummies</h2>
-                    <p class="text-center">Unlock the magic of a peaceful night's rest with our All-Natural Children's Sleep Gummies. Crafted with care and expertise, these delightful gummies are designed to gently guide you into a deep and restorative sleep, allowing you to wake up refreshed and rejuvenated.</p>
-                  </div>
-                  <img src="/images/cutegummies.jpeg" class="d-block w-25 ml-4" alt="Children's Sleep Gummies">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </section>        
-      </main>
-      <footer class="bg-secondary text-white text-center py-3">
-        <p>&copy; 2023 Sleep Aid. Todos los derechos reservados.</p>
-      </footer>
-    </div>
-  </div>
-</body>
-</html>
+             <section class="product-info container-md background-seccion background-image-product">
+               <h1>Why choose our products?</h1>
+               <span >At our core, we're driven by a relentless commitment to excellence, innovation, and your ultimate satisfaction. When you choose our products, you're not just selecting a brand; you're embracing a philosophy that puts you at the center of everything we do.</span>
+               <span>We take pride in crafting products of the highest quality, meticulously designed and rigorously tested to meet and exceed your expectations. Our dedication to quality ensures that each product you receive is a testament to our unwavering standards.</span>
+               <span>When you choose us, you're choosing transparency. We believe in open communication about our products, their ingredients, and their benefits. Your trust is invaluable, and we aim to uphold it through honesty and integrity.</span>
+             </section>
+             <section class="ribbon-section">
+               <h1 class="text-center">Products</h1>
+               <div class="container">
+                 <div class="row">
+                   <div class="col-md-3 col-6 ribbon-image">
+                     <img src="images/sleeppill.jpeg" alt="ImagenSquare">
+                   </div>
+                   <div class="col-md-3 col-6 ribbon-image">
+                     <img src="images/sleeppill.jpeg" alt="ImagenSquare">
+                   </div>
+                   <div class="col-md-3 col-6 ribbon-image">
+                     <img src="images/sleeppill.jpeg" alt="ImagenSquare">
+                   </div>
+                   <div class="col-md-3 col-6 ribbon-image">
+                     <img src="images/sleeppill.jpeg" alt="ImagenSquare">
+                   </div>
+                 </div>
+               </div>
+             </section>
+             <section class="product-carousel">
+               <div id="carouselExampleControls" class="carousel slide container-md" data-bs-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <div class="d-flex align-items-center">
+                       <div>
+                         <h2 class="text-center mb-4">Strawberry Gummies</h2>
+                         <p class="text-center">Unlock the magic of a peaceful night's rest with our All-Natural Strawberry Sleep Gummies. Crafted with care and expertise, these delightful gummies are designed to gently guide you into a deep and restorative sleep, allowing you to wake up refreshed and rejuvenated.</p>
+                       </div>
+                       <img src="/images/gummies.jpeg" class="d-block w-25 ml-4" alt="Strawberry Gummies">
+                     </div>
+                   </div>
+     
+                   <div class="carousel-item">
+                     <div class="d-flex align-items-center">
+                       <div>
+                         <h2 class="text-center mb-4">Tropical Punch Gummies</h2>
+                         <p class="text-center">Transport yourself to a paradise of relaxation with our Tropical Punch Sleep Gummies. Immerse your senses in the refreshing allure of tropical fruits, expertly blended to guide you into a serene and restful sleep. Let the soothing rhythm of the tropics lull you into a world of calm dreams.</p>
+                       </div>
+                       <img src="/images/fruitgummies.jpeg" class="d-block w-25 ml-4" alt="Assorted Fruit Gummies">
+                     </div>
+                   </div>
+                   
+                   <div class="carousel-item">
+                     <div class="d-flex align-items-center">
+                       <div>
+                         <h2 class="text-center mb-4">Children's Sleep Gummies</h2>
+                         <p class="text-center">Nurture the journey to dreamland for your little ones with our Children's Sleep Gummies. Created with a dash of magic and a sprinkle of care, these gummies are designed to ease children into a peaceful sleep, filling their nights with the wonder of dreams and the promise of a well-rested tomorrow.</p>
+                       </div>
+                       <img src="/images/cutegummies.jpeg" class="d-block w-25 ml-4" alt="Children's Sleep Gummies">
+                     </div>
+                   </div>
+                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                   </button>
+                   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                   </button>
+                 </div>
+               </div>
+             </section>
+             <section class="container content-section">
+               <h2 class="section-header">Sleep Aid Products</h2>
+               <div class="shop-items">
+                   <div class="shop-item">
+                       <span class="shop-item-title">Sleeping Dragon Sleep Aid Pills</span>
+                       <img class="shop-item-image" src="images/sleeppill.jpeg">
+                       <div class="shop-item-details">
+                           <span class="shop-item-price">$15.99</span>
+                           <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                       </div>
+                   </div>
+                   <div class="shop-item">
+                       <span class="shop-item-title">Strawberry Gummies</span>
+                       <img class="shop-item-image" src="images/strawberrysleepgummies.webp">
+                       <div class="shop-item-details">
+                           <span class="shop-item-price">$14.99</span>
+                           <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                       </div>
+                   </div>
+                   <div class="shop-item">
+                       <span class="shop-item-title">Tropical Punch</span>
+                       <img class="shop-item-image" src="images/assortedfruitgummies.webp">
+                       <div class="shop-item-details">
+                           <span class="shop-item-price">$13.99</span>
+                           <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                       </div>
+                   </div>
+                   <div class="shop-item">
+                       <span class="shop-item-title">Children's Sleep Aid Gummies</span>
+                       <img class="shop-item-image" src="images/childsleepgummies.webp">
+                       <div class="shop-item-details">
+                           <span class="shop-item-price">$12.99</span>
+                           <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                       </div>
+                       <div class="shop-item">
+                         <span class="shop-item-title">Mixed Berry Collagen</span>
+                         <img class="shop-item-image" src="images/mixedberrysleepgummies.webp">
+                         <div class="shop-item-details">
+                             <span class="shop-item-price">$15.99</span>
+                             <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                         </div>
+                     </div>
+                   </div>
+               </div>
+           </section>
+           <br>
+           <section class="container content-section">
+             <h2 class="section-header">CART</h2>
+             <div class="cart-row">
+                 <span class="cart-item cart-header cart-column">ITEM</span>
+                 <span class="cart-price cart-header cart-column">PRICE</span>
+                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+             </div>
+             <div class="cart-items">
+             </div>
+             <div class="cart-total">
+                 <strong class="cart-total-title">Total</strong>
+                 <span class="cart-total-price">$0</span>
+             </div>
+             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+         </section>    
+           </main>
+           <footer class="footer py-4">
+             <div class="container">
+                 <div class="row align-items-center justify-content-center">
+                     <div class="custom-footer-links">
+                       <a href="index.html">CAVE</a>
+                       <a href="about.html">ABOUT THE DRAGON</a>
+                       <a href="#">SHOP</a>
+                       <a href="contact.html">CONTACT</a>
+                     </div>
+                     <div class="col-md-3 d-flex justify-content-center align-items-center">
+                       <div class="social-icons">
+                           <a href=""><img src="images/twitter.png" class="social-icon"></a>
+                           <a href="#"><img src="images/IG.png" class="social-icon"></a>
+                           <a href="#"><img src="images/linkedin.png" class="social-icon"></a>
+                           <a href="#"><img src="images/youtube.png" class="social-icon"></a>
+                           <a href="#"><img src="images/be.png" class="social-icon"></a>
+                           <a href="#"><img src="images/ws.png" class="social-icon"></a>
+                       </div>
+                   </div>   
+                 </div>
+             </div>
+             <div class="container mt-3 custom-footer">
+                 <p class="text-center">&copy; SleppingDragon. Todos los derechos reservados.</p>
+             </div>
+         </footer>
+         </div>
+       </div>
+     </body>
+     </html>
