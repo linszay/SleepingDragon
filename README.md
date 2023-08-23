@@ -73,7 +73,9 @@ git clone <REPOSITORY_URL>
 ```
 2. Open the `index.html` file in your web browser to view the site.
 
-3. Explore the different sections of the site to learn more about Sleep Aid Dragon and its approach to improving sleep quality.
+3. Run ```sass styles.scss styles.css``` to ensure latest styles are available.
+
+4. Explore the different sections of the site to learn more about Sleep Aid Dragon and its approach to improving sleep quality.
 
 ## Technologies Used 🛸
 
