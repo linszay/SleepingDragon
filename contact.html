@@ -1,330 +1,93 @@
-@charset "UTF-8";
-/********* IMPORTING ************/
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap");
-/**** Animations *****/
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/**** VARIABLE DEFINITION *****/
-/*********** TYPOGRAPHY ***************/
-/********* TYPOGRAPHY SIZES *************/
-.small {
-  font-family: "Outfit", sans-serif;
-  font-size: 14px;
-  color: #ffffff;
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-.medium {
-  font-family: "Outfit", sans-serif;
-  font-size: 18px;
-  color: #fff2f2;
-}
+    <!-------Boostrap Responsive------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Sleep Aid - Ayuda para Dormir</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-.large {
-  font-family: "Outfit", sans-serif;
-  font-size: 24px;
-  color: #ffffff;
-}
+  <body>
+    <!------------------ENCABEZADO--Barra de Navegacion-------------------->
+    <header> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-logo" href="#">
+                    <img src="images/sleppingdragon.png" alt="Logo" width="400" class="d-inline-block align-text-top">
+                </a>
+                <a class="navbar-brand" href="#">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                   <div class="navbar-nav">
+                    <a class="nav-link-custom nav-link" href="index.html">CAVE</a>
+                    <a class="nav-link-custom nav-link" href="about.html">ABOUT THE DRAGON</a>
+                    <a class="nav-link-custom nav-link" href="product.html">SHOP</a>
+                    <a class="nav-link-custom nav-link" aria-current="page" href="contact.html">CONTACT</a>
+                    <a class="nav-link-custom nav-link disabled" aria-disabled="true"></a>
+                  </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-body {
-  font-family: "Outfit", sans-serif;
-  background-color: #2e075d;
-}
+    <div class="background-image-contact">
+        <div class="overlay-container">
+            <div class="row-contact">
+                <form action="https://formsubmit.co/mnl.azs@gmail.com" method="POST" onsubmit="redirectToAnotherPage()"/>
+                    <div class="input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button class="btn-primary" type="submit">"GROOOOARRR"</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
-header {
-  background-color: #2e075d;
-  font-family: "Outfit", sans-serif;
-  position: sticky;
-  top: 0;
-  transition: transform 0.3s ease-in-out;
-  opacity: 1;
-}
-
-/******Efect on the header*******/
-.header.hidden {
-  opacity: 0;
-  transform: translateY(-100%);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.header.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/********************************/
-.container-fluid {
-  max-width: 100%;
-  background-color: #2e075d;
-}
-
-.nav-link-custom {
-  color: #ffffff;
-  font-size: 24px;
-  margin: 20px;
-  transition: color 0.5s;
-}
-
-.navbar-nav .nav-item {
-  margin: 0 100px;
-}
-
-.nav-item.nav-link {
-  text-decoration: none;
-}
-
-.nav-link-custom:hover {
-  color: #97db29;
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: -45px;
-}
-
-.container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-  max-width: 1616px;
-}
-
-/*************** container que disapear *****************/
-.background-image {
-  background-image: url("images/white-noise.jpg");
-  background-size: cover;
-  background-position: bottom center;
-  position: relative;
-  max-width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .background-image {
-    max-width: 100%; /* Ajusta el valor para dispositivos más pequeños */
-  }
-}
-/*************** background About***********************/
-.background-image-about {
-  background-image: url("images/group.avif");
-  position: relative;
-  margin-top: -50px;
-  margin-bottom: -50px;
-}
-
-.bg-body-tertiary {
-  --bs-bg-opacity: 0;
-}
-
-/**************** background Contact********************/
-.background-image-contact {
-  background-image: url("images/Best.jpg");
-  background-size: cover;
-  background-position: bottom center;
-  padding-top: 10%;
-  position: relative;
-  max-width: 100%;
-}
-
-.overlay-container {
-  background-color: rgba(66, 31, 129, 0.5);
-  color: #ffffff;
-  padding: 60px;
-  margin-top: 779px;
-  animation: fadeIn 5s;
-  max-width: 1675px;
-}
-
-.row-contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 200px); /* Ajusta el valor para controlar la altura vertical */
-}
-
-/************************************************************************/
-.ribbon-section {
-  margin-top: 50px;
-}
-.ribbon-section .row {
-  display: flex; /* Mostrar las columnas en una fila flexible */
-  flex-wrap: wrap; /* Envolver las columnas si no caben en una sola fila */
-  justify-content: center; /* Centrar las columnas horizontalmente */
-  align-items: stretch;
-  margin-bottom: 47px;
-}
-.ribbon-section .row .ribbon-image {
-  flex: 1; /* Cambio: permite que las columnas ocupen el espacio disponible */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid #885dcf;
-  margin: 10px;
-  max-width: 300px; /* Ajusta el ancho máximo según tus necesidades */
-}
-.ribbon-section .row .ribbon-image img {
-  max-width: 266px;
-  max-height: 266px;
-  object-fit: contain;
-}
-
-/*************** Contact Section *****************/
-.contact-section {
-  background-color: #421f81; /* Cambiar el color de fondo */
-  color: #ffffff; /* Cambiar el color del texto */
-}
-.contact-section .contact-description {
-  border-right: 2px solid #b784fc; /* Agregar un borde lateral de color */
-  padding-right: 20px; /* Agregar espacio en el lado derecho */
-}
-.contact-section .contact-form {
-  background-color: rgba(151, 219, 41, 0.5); /* Cambiar el color de fondo del formulario */
-  padding: 54px; /* Añadir espacio interno */
-  border-radius: 22px; /* Agregar bordes redondeados */
-  margin-bottom: 100px;
-}
-.contact-section .form-label {
-  color: #fff2f2; /* Cambiar el color de las etiquetas del formulario */
-}
-.contact-section .form-control {
-  background-color: #2e075d; /* Cambiar el color de fondo de los campos de entrada */
-  color: #ffffff; /* Cambiar el color del texto en los campos de entrada */
-  border-color: #b784fc; /* Cambiar el color del borde de los campos de entrada */
-}
-.contact-section .btn-primary {
-  background-color: #b784fc; /* Cambiar el color de fondo del botón */
-  border-color: #b784fc; /* Cambiar el color del borde del botón */
-}
-.contact-section .btn-primary:hover {
-  background-color: #9a52fb; /* Oscurecer el color del botón al pasar el cursor */
-  border-color: #9a52fb; /* Oscurecer el color del borde del botón al pasar el cursor */
-}
-
-/*********************Contact Page*************************/
-form {
-  padding: 60px 68px;
-  box-shadow: 0 0 20px #6004c3;
-  border-radius: 60px;
-  text-align: center;
-  width: 340px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.input {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-label {
-  color: #fff;
-}
-
-/*********************Footer*************************/
-/*********Palabras en el top del footer******************/
-.custom-footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 88px; /* Espacio entre elementos */
-}
-
-.custom-footer-links a {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  text-decoration: none;
-  margin-top: 30px;
-}
-
-.custom-footer-links a:hover {
-  color: #ffcc00; /* Cambia a tu color deseado en hover */
-}
-
-/*********Social Icons******************/
-.social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 35px; /* Espacio entre íconos */
-  margin-top: 31px;
-}
-
-.social-icon {
-  max-width: 40px;
-  height: auto;
-  margin: 5px;
-  width: 30px;
-}
-
-.custom-footer {
-  text-align: center;
-  color: white;
-  font-family: "Outfit", sans-serif;
-}
-
-footer {
-  background-color: #b784fc;
-}
-
-/***************Cookies*********************/
-.cookie-popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-}
-
-.cookie-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-/*--------------Product Styling --------------------*/
-.background-image-product {
-  background-image: url("images/productback.jpg");
-  background-size: cover;
-  background-position: bottom center;
-  padding-top: 50%;
-  position: relative;
-  max-width: 100%;
-}
-
-.product-carousel {
-  padding: 5%;
-  margin: 0%;
-  background-color: #bda2e0;
-}
-
-.carousel-item > img {
-  border-radius: 6%;
-}
-
-.carousel-control-next .carousel-control-prev {
-  margin-right: 90px;
-  margin-left: 10px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="custom-footer-links">
+                    <a href="index.html">CAVE</a>
+                    <a href="about.html">ABOUT THE DRAGON</a>
+                    <a href="product.html">SHOP</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-items-center">
+                  <div class="social-icons">
+                    <a href=""><img src="images/twitter.png" class="social-icon"></a>
+                    <a href="#"><img src="images/IG.png" class="social-icon"></a>
+                    <a href="#"><img src="images/linkedin.png" class="social-icon"></a>
+                    <a href="#"><img src="images/youtube.png" class="social-icon"></a>
+                    <a href="#"><img src="images/be.png" class="social-icon"></a>
+                    <a href="#"><img src="images/ws.png" class="social-icon"></a>
+                  </div>
+              </div>   
+            </div>
+        </div>
+  
+        <div class="container mt-3 custom-footer">
+            <p class="text-center">&copy; SleppingDragon. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+s
