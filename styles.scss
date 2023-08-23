@@ -163,9 +163,10 @@ header {
 }
 
 .overlay-container {
-  color: #ffffff;
+  background-color: rgba(66, 31, 129, 0.5);
   margin-top: 779px;
   max-width: 1675px;
+  animation: fadeIn 5s;
 }
 
 .row-contact {
