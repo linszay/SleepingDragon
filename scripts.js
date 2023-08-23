@@ -14,3 +14,10 @@ window.addEventListener("load", () => {
     }
   }, 2000);
 });
+
+
+
+function redirectToAnotherPage() {
+  // Redirect to the desired page
+  window.location.href = "popup.html";
+}
