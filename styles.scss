@@ -111,7 +111,6 @@ header {
   display: flex;
   align-items: center;
   margin: 0 auto; 
-  margin-bottom: -45px;
 }
 
 @media (min-width: 1400px){}
@@ -354,6 +353,10 @@ footer {
 }
 
 /*--------------Product Styling --------------------*/
+.background-white {
+  background-color: white;
+}
+
 .background-image-product {
   background-image: url("images/productback.jpg");
   background-size: cover;
@@ -362,11 +365,10 @@ footer {
   position: relative;
   max-width: 100%; }
 
-.product-carousel {
+.product-column {
   margin: 0%;
   background-color: #bda2e0; 
   width: 100%;
-  height: 320px;
 }
 
 .carousel-item {
@@ -387,16 +389,6 @@ footer {
   }
 }
 
-
-.content-section {
-  margin: 1em;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1.5em;
-}
 
 .section-header {
   margin-top: 40px;
