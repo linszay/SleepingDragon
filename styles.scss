@@ -163,11 +163,8 @@ header {
 }
 
 .overlay-container {
-  background-color: rgba(66, 31, 129, 0.5); 
   color: #ffffff;
-  padding: 60px;
   margin-top: 779px;
-  animation: fadeIn 5s;
   max-width: 1675px;
 }
 
@@ -175,9 +172,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 200px); /* Ajusta el valor para controlar la altura vertical */
 }
 
+/*********************** Product page ***********************************/
+
+.product-carousel{
+  background-color: $primary-color;
+}
 
 /************************************************************************/
 
@@ -551,3 +552,34 @@ footer {
   margin: 40px auto 80px auto;
   font-size: 1.75em;
 }
+
+
+/***************Pop Up page*********************/
+
+        .confirmation-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #2e075d;
+        }
+
+        .overlay-container-popup {
+            background-color: rgba(66, 31, 129, 0.5);
+            color: white;
+            padding: 56px;
+            border-radius: 57px;
+            text-align: center;
+        }
+
+        .large {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        p {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+        }
