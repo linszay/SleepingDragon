@@ -77,6 +77,8 @@ git clone <REPOSITORY_URL>
 
 4. Explore the different sections of the site to learn more about Sleep Aid Dragon and its approach to improving sleep quality.
 
+#### You can also view the live site at [Sleeping Dragon](https://linszay.github.io/SleepingDragon/).
+
 ## Technologies Used 🛸
 
 - HTML5: The website's structure is built using HTML5 for semantic and efficient markup.
